@@ -1,4 +1,4 @@
-import { readFile, promises } from "fs";
+import { readFile } from "fs";
 import { promisify } from "util";
 
 console.log("1");

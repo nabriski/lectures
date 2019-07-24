@@ -1,0 +1,9 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./dist"
+    //"watch": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
