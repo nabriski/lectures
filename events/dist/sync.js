@@ -11,16 +11,19 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var EventEmitter = require("events");
-var MyEmitter = /** @class */ (function (_super) {
-    __extends(MyEmitter, _super);
-    function MyEmitter() {
+var EventEmitter2 = require("events");
+var MyEmitter2 = /** @class */ (function (_super) {
+    __extends(MyEmitter2, _super);
+    function MyEmitter2() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    return MyEmitter;
-}(EventEmitter));
-var myEmitter = new MyEmitter();
-myEmitter.on("event", function (p1, p2) {
-    console.log("an event has occurred! p1:" + p1 + ", p2:" + p2);
+    return MyEmitter2;
+}(EventEmitter2));
+var myEmitter2 = new MyEmitter2();
+myEmitter2.on("event", function () {
+    console.log("registered first!");
 });
-myEmitter.emit("event", "param1", "param2");
+myEmitter2.on("event", function () {
+    console.log("registered second!");
+});
+myEmitter2.emit("event");
