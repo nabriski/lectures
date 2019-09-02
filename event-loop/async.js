@@ -2,10 +2,9 @@ const fs = require("fs");
 
 function foo(arg) {
   if (!arg) {
-    console.log("ERROR");
+    setTimeout(() => console.log("ERROR"), 0);
     return;
   }
-
   fs.stat("./", () => console.log("IO"));
 }
 
