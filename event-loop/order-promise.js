@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 i = 0;
-fs.stat("./", () => console.log(`${++i}. IO`));
+fs.readFile(__filename, () => console.log(`${++i}. I/O`));
 
 Promise.resolve()
   //  .then(() => console.log(`${++i}. promise`))

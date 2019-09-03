@@ -5,7 +5,7 @@ function foo(arg) {
     setTimeout(() => console.log("ERROR"), 0);
     return;
   }
-  fs.stat("./", () => console.log("IO"));
+  fs.readFile(__filename, () => console.log("I/O"));
 }
 
 foo(Math.random() > 0.5);
