@@ -2,6 +2,7 @@ const fs = require("fs");
 
 function foo(arg) {
   if (!arg) {
+    // this will run async now
     setTimeout(() => console.log("ERROR"), 0);
     return;
   }
